@@ -12,7 +12,9 @@ Fork Testing RPC caching
 - By pinning to a block number, forge caches RPC responses so only the first run is slower, and subsequent runs are significantly faster
 
 
-Fuzzing
+Fuzzing 
+optimizer_runs = 1000000
+
 - https://github.com/foundry-rs/foundry-toolchain
 - Note that if you are fuzzing in your fork tests, the RPC cache strategy above will not work unless you set a fuzz seed. 
 - At least one fuzz test per function in the contract
